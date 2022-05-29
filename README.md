@@ -1,3 +1,8 @@
 # js-8pweeb
 
-Please see index.js for test results
+## Main Filter
+  let group = activity.reduce((r, a) => {
+    r[a.EmployeeID] = [...r[a.EmployeeID] || [], a];
+    return r;
+   }, {});
+   console.log("group", group);
